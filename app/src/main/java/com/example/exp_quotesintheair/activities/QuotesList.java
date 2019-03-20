@@ -39,7 +39,7 @@ public class QuotesList extends AppCompatActivity {
             }
         });
 
-        quotesAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+//        quotesAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
     }
 
     @Override
