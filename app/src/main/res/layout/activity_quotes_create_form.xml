@@ -36,12 +36,13 @@
         android:id="@+id/btn_save"
         android:layout_width="182dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:background="@color/colorAccent"
         android:text="Save"
         android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
         app:layout_constraintTop_toBottomOf="@+id/et_quote"
-        tools:layout_editor_absoluteX="213dp"
         tools:ignore="MissingConstraints" />
 
     <Button

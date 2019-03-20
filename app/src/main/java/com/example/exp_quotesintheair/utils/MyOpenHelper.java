@@ -7,12 +7,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class MyOpenHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "my.db";
-    private static final int DATABASE_VERSION = 1;
-    private static final String TABLE_NAME = "persons";
+    private static final int DATABASE_VERSION = 2;
+
+    private static final String TABLE_NAME = "quote";
     private static final String TABLE_CREATE =
             "CREATE TABLE " + TABLE_NAME + "(" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "name TEXT NOT NULL);";
+                    "content TEXT NOT NULL);";
 
     public MyOpenHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
